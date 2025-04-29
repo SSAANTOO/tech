@@ -1,0 +1,138 @@
+body{
+margin:0;
+}
+
+.header{
+background-color: #ffe500a6;
+text-align: center;
+padding: 5px;
+margin:0;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #333;
+  text-decoration: none;
+}
+
+/* for user interaction */
+.nav a{
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ }
+
+/* change color on hover */
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+a{
+color: #000000;
+text-decoration: none;
+}
+
+
+/* The display of the information */
+.center{
+display: grid;
+place-items: center;}
+
+.topics {
+    display: flex;
+    --bs-gutter-x: 1.5rem;
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.intro{
+width: 97%;
+background-color:#80808047;
+text-align:center;
+}
+
+.bulk{
+text-align:center;
+width: 93%;
+
+}
+
+h6{
+font-size: 17px
+}
+
+.intro a{
+float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.error { color: red; }
+
+.topics1{
+  display: flex;
+    --bs-gutter-x: 1.5rem;
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.topic {
+  float: left;
+
+  width: 33.33%;
+  padding: 15px;
+  background-color:#80808047;
+}
+
+.pic{
+
+   height:200px;
+   width: 250px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topics {
+    width: 100%;
+    }
+}
+
+
+
+/* login and register */
+
+
+/*carbon cal*/
+.whole{
+  margin: auto;
+  width: 50%;
+  background-color:gray;
+  padding: 10px;
+}
+
+.main{
+ margin: auto;
+  width: 90%;
+}
+.text{
+text-align: center;
+}
+
+.answer{
+    margin: auto;
+  width: 50%;
+  padding: 10px;
+background-color: #ffe500a6;
+}

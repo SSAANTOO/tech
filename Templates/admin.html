@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/mystyle.css">
+    <meta charset="UTF-8">
+    <title>admin</title>
+</head>
+<body>
+<div class="header">
+    <h1> Rosla Technologies - admin</h1>
+</div>
+<div class="nav">
+    <a href="/hub">Hub</a>
+</div>
+
+{% if Consult %}
+        <p class="consult">{{ Consult }}</p>
+{% endif %}
+
+{% if Install %}
+        <p class="install">{{ Install }}</p>
+{% endif %}
+
+</body>
+</html>

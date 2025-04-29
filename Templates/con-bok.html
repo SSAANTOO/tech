@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/mystyle.css">
+    <meta charset="UTF-8">
+    <title>Consulting booking - Rosla Technologies</title>
+</head>
+<body>
+<div class="header">
+    <h1> Consulting Booking </h1>
+</div>
+<div class="nav">
+    <a href="/info">Info</a>
+    <a href="/hub">Hub</a>
+    <a href="/install">Install</a>
+    <a href="/carbon">Carbon</a>
+    <a href="/settings">Settings</a>
+</div>
+<br>
+<br>
+{% if error %}
+        <p class="error">{{ error }}</p>
+{% endif %}
+{% if confirm %}
+        <p class="confirm">{{ confirm }}</p>
+{% endif %}
+<br>
+
+<!-- date picker -->
+<form action = "/consulting" method="post">
+
+
+    <label for="day">What date?</label>
+    <input type="date" name="date" id="day">
+    <input type="submit">
+
+</form>
+
+</body>
+</html>

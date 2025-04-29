@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/mystyle.css">
+    <meta charset="UTF-8">
+    <title>Solar</title>
+    <meta charset="UTF-8">
+    <title>Register - Rosla Technologies</title>
+</head>
+<body>
+<div class="header">
+    <h1> Rosla Technologies </h1>
+</div>
+
+{% if error %}
+        <p class="error">{{ error }}</p>
+{% endif %}
+
+<div class="whole">
+    <div class="inbox">
+        <form action="/register" method="post">
+
+            <!--username input -->
+            <label for="name"> Username:</label>
+            <input type="text" id="name" name="name"><br>
+
+            <!--password input and confirmation-->
+            <label for="pasw"> Password:</label>
+            <input type="password" id="pasw" name="pasw"><br>
+
+            <label for="usercp"> Confirm Password:</label>
+            <input type="password" id="usercp" name="usercp"><br>
+
+            <!-- email input -->
+            <label for="emai"> email:</label>
+            <input type="text" id="emai" name="emai"><br>
+
+            <!-- address input -->
+            <label for="addr"> Address:</label>
+            <input type="text" id="addr" name="addr"><br>
+
+            <!-- submission -->
+            <button type="submit">Register</button>
+
+        </form>
+    </div>
+</div>
+<h5> You already have an account?
+<a href ="/login">Press here</a>
+</h5>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/mystyle.css">
+    <meta charset="UTF-8">
+    <title>Carbon footprint calculator - Rosla Technologies</title>
+</head>
+<body>
+<div class="header">
+    <h1> Carbon calculator </h1>
+</div>
+
+<!-- navigation -->
+<div class="nav">
+    <a href="/hub">Hub</a>
+    <a href="/consulting">Consulting</a>
+    <a href="/install">Install</a>
+    <a href="/carbon">Carbon</a>
+    <a href="/settings">Settings</a>
+</div>
+
+<!-- for css -->
+<div class="whole">
+    <div class="text">
+        <h4> How this works is by you giving the total energy used and the carbon that was released will be displayed.</h4>
+    </div>
+    <div class="main">
+        <div class="calc">
+            <form action="/carbon" method="post">
+                <!-- user input section -->
+                <label for="wood">Wood: (joules/J)</label>
+                <input type="number" id="wood" name="wood" value="0">
+                <br>
+
+                <label for="coal">Coal: (joules/J)</label>
+                <input type="number" id="coal" name="coal" value="0">
+                <br>
+
+                <label for="natural-gas">Natural gas: (joules/J)</label>
+                <input type="number" id="natural-gas" name="natural-gas" value="0">
+                <br>
+
+                <label for="car">Car: (kilometers/KM)</label>
+                <input type="number" id="car" name="car" value="0">
+                <br>
+
+                <label for="car-time">Car time: (minuets/M)</label>
+                <input type="number" id="car-time" name="car-time" value="0">
+                <br>
+
+                <button type="submit">submit</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+<!-- the amount of carbon -->
+<!-- using ginger to display the outputs -->
+<div class = "answer">
+    <p> Here is the amount of carbon:</p>
+
+    <p>{{ carbon_w }}</p>
+
+    <p> {{ carbon_c }}</p>
+
+    <p> {{ carbon_n }}</p>
+
+    <p> {{ carbon_cd }}</p>
+
+    <p> {{ carbon_t }}</p>
+
+    <p></p>
+</div>
+
+
+
+</body>
+</html>
